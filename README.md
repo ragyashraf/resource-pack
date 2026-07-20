@@ -1,17 +1,24 @@
-# MiniArena Resource Pack
+# Noctis Nova Resource Pack
 
-Tiered TNT textures for Noctis Nova (Paper 1.21.6).
+Tiered TNT textures for Paper 1.21.6.
 
-## Direct download URL
-
-```
-https://raw.githubusercontent.com/ragyashraf/resource-pack/main/MiniArena-ResourcePack.zip
-```
-
-SHA-1:
+## Resource pack URL (use this ? jsDelivr is more reliable than raw GitHub)
 
 ```
-2fe02755291d7edcd6b2ffc5a6465d83d4d50a3c
+https://cdn.jsdelivr.net/gh/ragyashraf/resource-pack@main/MiniArena-ResourcePack.zip
 ```
 
-Set `resource-pack` and `resource-pack-sha1` in server properties, then restart.
+## SHA-1
+
+```
+d2393d3490779ce4a6d156b85a985f8c643c9f19
+```
+
+In `server.properties`:
+
+```
+resource-pack=https://cdn.jsdelivr.net/gh/ragyashraf/resource-pack@main/MiniArena-ResourcePack.zip
+resource-pack-sha1=d2393d3490779ce4a6d156b85a985f8c643c9f19
+```
+
+Then restart the server. Players must accept the pack prompt.
