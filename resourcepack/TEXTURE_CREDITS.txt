@@ -1,0 +1,8 @@
+TNT tier textures sourced from Modrinth resource packs (for MiniArena tower tiers):
+- normal  <- Magex's Barrel TNT (magexs-barrel-tnt)
+- strong  <- TNT Rust (tnt-rust)
+- super   <- Red TNT Barrel (red-tnt-barrel)
+- mega    <- Nuclear TNT (nuclear-tnt)
+- ultra   <- Black TNT (black-tnt)
+
+Original authors retain their rights; used as textures in this server pack.

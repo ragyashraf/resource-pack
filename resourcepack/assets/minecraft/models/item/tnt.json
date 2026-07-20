@@ -1,0 +1,35 @@
+{
+  "parent": "miniarena:block/tnt_vanilla",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "miniarena:block/tnt_normal"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "miniarena:block/tnt_strong"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "miniarena:block/tnt_super"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5
+      },
+      "model": "miniarena:block/tnt_mega"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 6
+      },
+      "model": "miniarena:block/tnt_ultra"
+    }
+  ]
+}

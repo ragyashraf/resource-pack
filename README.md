@@ -1,4 +1,4 @@
-# MiniArena Resource Pack
+﻿# MiniArena Resource Pack
 
 Tiered TNT textures for the MiniArena Minecraft plugin (Paper 1.21.6).
 
@@ -13,40 +13,34 @@ https://raw.githubusercontent.com/ragyashraf/resource-pack/main/MiniArena-Resour
 SHA-1 of the zip:
 
 ```
-a61e72adf5972b743978a67569a594e7d2081b5d
+f13ab0f6a46a90fe89a3405488ff047ae290be4e
 ```
 
-Set both values in the server properties (`resource-pack` and
-`resource-pack-sha1`), then restart. Players are prompted to download the pack
-when they join.
+Set both values in the server properties (`resource-pack` and `resource-pack-sha1`), then restart. Players are prompted to download the pack when they join.
 
 ## What it contains
 
-Five TNT tiers, each retextured so the item is distinguishable in the hotbar:
+Five TNT tiers, each with a distinct design so the item (and placed ItemDisplay overlay) is distinguishable:
 
-| Tier | Model data | Colour |
-|------|-----------|--------|
-| Normal TNT | 2 | classic red |
-| Strong TNT | 3 | orange |
-| Super TNT | 4 | deep red |
-| Mega TNT | 5 | purple |
-| Ultra TNT | 6 | dark violet |
+| Tier | Model data | Design |
+| ---------- | ---------- | ----------- |
+| Normal TNT | 2 | Magex Barrel TNT |
+| Strong TNT | 3 | TNT Rust |
+| Super TNT | 4 | Red TNT Barrel |
+| Mega TNT | 5 | Nuclear TNT |
+| Ultra TNT | 6 | Black TNT |
 
-Textures are keyed on `custom_model_data` via `assets/minecraft/items/tnt.json`
-using the 1.21.4+ item model format.
+Textures are keyed on `custom_model_data` via `assets/minecraft/items/tnt.json` using the 1.21.4+ item model format.
 
-## Note on placed blocks
+Vanilla `minecraft:block/tnt` is emptied so the plugin overlays show without z-fighting.
 
-Custom model data applies to the **item**, not to placed blocks. Minecraft
-provides no way for a plugin or pack to give a placed vanilla TNT block a
-per-tier texture, so a built tower renders as ordinary TNT. The tier is still
-visible in the hotbar, in the item name, and in blast power.
+## Texture credits
+
+See `resourcepack/TEXTURE_CREDITS.txt`. Source packs from Modrinth; original authors retain their rights.
 
 ## Repository layout
 
-- `MiniArena-ResourcePack.zip` — the packaged pack, ready to serve
-- `resourcepack/` — unpacked sources, for editing
+* `MiniArena-ResourcePack.zip` — the packaged pack, ready to serve
+* `resourcepack/` — unpacked sources, for editing
 
-After editing anything under `resourcepack/`, re-zip its **contents** (so
-`pack.mcmeta` sits at the zip root, not inside a folder) and update the SHA-1
-in the server properties.
+After editing anything under `resourcepack/`, re-zip its **contents** (so `pack.mcmeta` sits at the zip root, not inside a folder) and update the SHA-1 in this README and in server properties.
