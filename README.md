@@ -1,24 +1,12 @@
 # Noctis Nova Resource Pack
 
-Tiered TNT textures for Paper 1.21.6.
+## Cybrancee server.properties
 
-## Resource pack URL (use this ? jsDelivr is more reliable than raw GitHub)
-
-```
-https://cdn.jsdelivr.net/gh/ragyashraf/resource-pack@main/MiniArena-ResourcePack.zip
-```
-
-## SHA-1
-
-```
-d2393d3490779ce4a6d156b85a985f8c643c9f19
-```
-
-In `server.properties`:
-
-```
-resource-pack=https://cdn.jsdelivr.net/gh/ragyashraf/resource-pack@main/MiniArena-ResourcePack.zip
+resource-pack=https://raw.githubusercontent.com/ragyashraf/resource-pack/main/MiniArena-ResourcePack.zip
 resource-pack-sha1=d2393d3490779ce4a6d156b85a985f8c643c9f19
-```
 
-Then restart the server. Players must accept the pack prompt.
+(Or commit-pinned jsDelivr if raw fails:)
+resource-pack=https://cdn.jsdelivr.net/gh/ragyashraf/resource-pack@12de3fbea2f4d6bee26c8500c66c2393e414e1f3/MiniArena-ResourcePack.zip
+resource-pack-sha1=d2393d3490779ce4a6d156b85a985f8c643c9f19
+
+Require-resource-pack can stay false until it loads successfully.
