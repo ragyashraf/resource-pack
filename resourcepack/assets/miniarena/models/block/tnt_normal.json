@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "miniarena:block/tnt_normal_bottom",
+    "side": "miniarena:block/tnt_normal_side",
+    "top": "miniarena:block/tnt_normal_top"
+  }
+}
