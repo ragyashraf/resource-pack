@@ -1,0 +1,90 @@
+{
+  "textures": {
+    "atlas": "miniarena:item/car_azure",
+    "particle": "miniarena:item/car_azure"
+  },
+  "elements": [
+    {
+      "name": "body",
+      "from": [1.0, 3.0, 4.0],
+      "to": [15.0, 7.0, 12.0],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 8], "texture": "#atlas"},
+        "south": {"uv": [0, 0, 16, 8], "texture": "#atlas"},
+        "east": {"uv": [0, 0, 16, 8], "texture": "#atlas"},
+        "west": {"uv": [0, 0, 16, 8], "texture": "#atlas"},
+        "up": {"uv": [16, 0, 32, 8], "texture": "#atlas"},
+        "down": {"uv": [16, 0, 32, 8], "texture": "#atlas"}
+      }
+    },
+    {
+      "name": "cabin",
+      "from": [5.0, 7.0, 5.0],
+      "to": [12.0, 10.5, 11.0],
+      "faces": {
+        "north": {"uv": [0, 8, 16, 16], "texture": "#atlas"},
+        "south": {"uv": [0, 8, 16, 16], "texture": "#atlas"},
+        "east": {"uv": [0, 8, 16, 16], "texture": "#atlas"},
+        "west": {"uv": [0, 8, 16, 16], "texture": "#atlas"},
+        "up": {"uv": [16, 8, 32, 16], "texture": "#atlas"},
+        "down": {"uv": [16, 8, 32, 16], "texture": "#atlas"}
+      }
+    },
+    {
+      "name": "nose",
+      "from": [14.5, 3.5, 4.5],
+      "to": [15.5, 6.5, 11.5],
+      "faces": {
+        "north": {"uv": [16, 16, 32, 24], "texture": "#atlas"},
+        "south": {"uv": [16, 16, 32, 24], "texture": "#atlas"},
+        "east": {"uv": [16, 16, 32, 24], "texture": "#atlas"},
+        "west": {"uv": [16, 16, 32, 24], "texture": "#atlas"},
+        "up": {"uv": [16, 16, 32, 24], "texture": "#atlas"},
+        "down": {"uv": [16, 16, 32, 24], "texture": "#atlas"}
+      }
+    },
+    {
+      "name": "front_wheels",
+      "from": [11.0, 1.5, 3.0],
+      "to": [14.0, 5.0, 13.0],
+      "faces": {
+        "north": {"uv": [0, 16, 16, 24], "texture": "#atlas"},
+        "south": {"uv": [0, 16, 16, 24], "texture": "#atlas"},
+        "east": {"uv": [0, 16, 16, 24], "texture": "#atlas"},
+        "west": {"uv": [0, 16, 16, 24], "texture": "#atlas"},
+        "up": {"uv": [0, 16, 16, 24], "texture": "#atlas"},
+        "down": {"uv": [0, 16, 16, 24], "texture": "#atlas"}
+      }
+    },
+    {
+      "name": "rear_wheels",
+      "from": [2.0, 1.5, 3.0],
+      "to": [5.0, 5.0, 13.0],
+      "faces": {
+        "north": {"uv": [0, 16, 16, 24], "texture": "#atlas"},
+        "south": {"uv": [0, 16, 16, 24], "texture": "#atlas"},
+        "east": {"uv": [0, 16, 16, 24], "texture": "#atlas"},
+        "west": {"uv": [0, 16, 16, 24], "texture": "#atlas"},
+        "up": {"uv": [0, 16, 16, 24], "texture": "#atlas"},
+        "down": {"uv": [0, 16, 16, 24], "texture": "#atlas"}
+      }
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [30, 225, 0],
+      "translation": [0, -1, 0],
+      "scale": [0.62, 0.62, 0.62]
+    },
+    "fixed": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 0, 0],
+      "scale": [1, 1, 1]
+    },
+    "head": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 0, 0],
+      "scale": [1, 1, 1]
+    }
+  }
+}

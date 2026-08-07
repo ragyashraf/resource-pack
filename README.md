@@ -12,19 +12,23 @@ chip, and roulette artwork.
 | Casino chips | 5 + locked | white 100, red 500, green 1k, black 5k, purple 25k |
 | Roulette pockets | 3 | red / black / green |
 | Buttons | 2 | Higher / Lower arrows |
+| Cosmetic icons | 23 | trail/aura/win badges, tab badges, padlock |
+| Cars | 8 | 3D models driven in Grand Prix |
 
-All casino textures are 16x16 and original work. See `TEXTURE_CREDITS.txt`
+The cars are 3D models on item-display entities, assembled from a chassis,
+cabin, nose, and two axles mapped into one 32x32 atlas per paint. All other
+textures are 16x16. Everything here is original work. See `TEXTURE_CREDITS.txt`
 for the TNT texture attributions.
 
 ## Serving the pack
 
     resource-pack=https://raw.githubusercontent.com/ragyashraf/resource-pack/main/MiniArena-ResourcePack.zip
-    resource-pack-sha1=41370984e99700330800570c168174f98741e621
+    resource-pack-sha1=e7fc4c7f3ab67172707db0f66f6fed05659ffdf8
 
 Commit-pinned jsDelivr, if raw.githubusercontent is unreliable:
 
     resource-pack=https://cdn.jsdelivr.net/gh/ragyashraf/resource-pack@main/MiniArena-ResourcePack.zip
-    resource-pack-sha1=41370984e99700330800570c168174f98741e621
+    resource-pack-sha1=e7fc4c7f3ab67172707db0f66f6fed05659ffdf8
 
 Alternatively the plugin can prompt for the pack itself, which shows a custom
 message and only asks once the player has logged in. In `config.yml`:
@@ -32,7 +36,7 @@ message and only asks once the player has logged in. In `config.yml`:
 ```yaml
 resource-pack:
   url: 'https://raw.githubusercontent.com/ragyashraf/resource-pack/main/MiniArena-ResourcePack.zip'
-  sha1: '41370984e99700330800570c168174f98741e621'
+  sha1: 'e7fc4c7f3ab67172707db0f66f6fed05659ffdf8'
   required: false
 ```
 
