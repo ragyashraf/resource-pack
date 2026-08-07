@@ -1,0 +1,13 @@
+# The resource pack is a build artefact as much as source: the committed
+# files are zipped and served to clients against a published SHA-1, so their
+# bytes must not change between checkouts. Without this, Git's autocrlf on
+# Windows rewrites the JSON line endings and the zip built from a fresh clone
+# no longer matches the hash in the README.
+*.json text eol=lf
+*.mcmeta text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+
+# Binary assets - never touched.
+*.png binary
+*.zip binary

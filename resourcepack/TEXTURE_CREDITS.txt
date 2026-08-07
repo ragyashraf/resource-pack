@@ -6,3 +6,17 @@ TNT tier textures sourced from Modrinth resource packs (for MiniArena tower tier
 - ultra   <- Black TNT (black-tnt)
 
 Original authors retain their rights; used as textures in this server pack.
+
+---
+
+Casino textures (cards, chips, roulette pockets, arrow buttons) are original
+work generated for MiniArena - no third-party assets. See the generator in
+the project history if they need regenerating at a different size or palette.
+
+- card_<rank>_<suit>  52 playing cards, 16x16, corner rank + suit pip
+- card_back           face-down card for the dealer's hole card
+- chip_<amount>       bet chips, coloured by the standard casino ramp
+                      (white 100, red 500, green 1k, black 5k, purple 25k)
+- chip_locked         greyed chip for a bet the player cannot afford
+- pocket_<colour>     roulette result tiles
+- btn_higher/lower    Higher-or-Lower guess arrows
