@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "miniarena:item/cos_aura_enchant"
+  }
+}

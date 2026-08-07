@@ -19,12 +19,12 @@ for the TNT texture attributions.
 ## Serving the pack
 
     resource-pack=https://raw.githubusercontent.com/ragyashraf/resource-pack/main/MiniArena-ResourcePack.zip
-    resource-pack-sha1=97430ddeaad1d20e0b7adf2c4e359b2e38d44ba5
+    resource-pack-sha1=41370984e99700330800570c168174f98741e621
 
 Commit-pinned jsDelivr, if raw.githubusercontent is unreliable:
 
     resource-pack=https://cdn.jsdelivr.net/gh/ragyashraf/resource-pack@main/MiniArena-ResourcePack.zip
-    resource-pack-sha1=97430ddeaad1d20e0b7adf2c4e359b2e38d44ba5
+    resource-pack-sha1=41370984e99700330800570c168174f98741e621
 
 Alternatively the plugin can prompt for the pack itself, which shows a custom
 message and only asks once the player has logged in. In `config.yml`:
@@ -32,7 +32,7 @@ message and only asks once the player has logged in. In `config.yml`:
 ```yaml
 resource-pack:
   url: 'https://raw.githubusercontent.com/ragyashraf/resource-pack/main/MiniArena-ResourcePack.zip'
-  sha1: '97430ddeaad1d20e0b7adf2c4e359b2e38d44ba5'
+  sha1: '41370984e99700330800570c168174f98741e621'
   required: false
 ```
 
@@ -56,3 +56,16 @@ Then update the hash in this README and in the plugin's `config.yml`.
 
 Rebuild the zip from the `resourcepack/` folder with `pack.mcmeta` at the
 archive root - not nested inside a parent directory, or the client rejects it.
+
+**Do not use PowerShell `Compress-Archive`.** It writes Windows backslashes
+into the zip entry names. The ZIP spec requires forward slashes, and Minecraft
+reads a backslash entry as one oddly-named file at the archive root - so the
+pack loads and validates, but every texture inside a folder is missing. That
+failure looks exactly like a pack that never applied, which makes it expensive
+to diagnose. This has now bitten twice.
+
+Use a tool that writes forward slashes, and verify before publishing:
+
+```bash
+unzip -l MiniArena-ResourcePack.zip | grep '\\' && echo "BROKEN - backslashes"
+```
